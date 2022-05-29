@@ -15,7 +15,13 @@
 
 ## Description
 
-Control OSC cappable Software / Devices from your TouchPortal Device
+Control OSC cappable software / devices from your TouchPortal device.  
+
+Target of this repository / plugin is to provide a framework for more specific OSC plugins, which can control dedicated software, without to know the exact paths.  
+As example this plugin provide 3 actions to send any parameter to any URL, which can be configured in editor.
+
+Every Action you define within **entry.tp**, will be automatically call the function you define within the equal named file in **src/actions** Folder, where you also get the parameters.  
+See the existing actions as example.
 
 ## ChangeLog
 ```
