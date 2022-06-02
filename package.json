@@ -1,6 +1,6 @@
 {
   "name": "oscconnector",
-  "version": "10005",
+  "version": "10006",
   "description": "Touch Portal Plugin for general OSC messages",
   "bin": {
     "oscconnector": "src/index.js"
@@ -22,7 +22,7 @@
     ]
   },
   "dependencies": {
-    "osc-min": "^1.1.1",
+    "osc": "^2.4.3",
     "require-dir": "^1.2.0",
     "touchportal-api": "^3.1.2"
   },
