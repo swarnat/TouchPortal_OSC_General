@@ -1,10 +1,15 @@
 const logIt = require("../helper/logIt");
+const OSCMessage = require("../lib/OSCMessage");
 const OSCClient = require("./../lib/OSCClient");
 
-module.exports = function(options) {
-    var parameter = Math.floor(+(options.osc_general_data));
 
-    logIt('DEBUG', 'Send Integer "' + parameter + '" to ' + options.osc_general_path);
+module.exports = function(parameter) {
+    var value = Math.floor(+(parameter.osc_general_data));
+
+    logIt('DEBUG', 'Send Integer "' + value + '" to ' + parameter.osc_general_path);
     
-    OSCClient.send(options.osc_general_path, parameter);
+    var newMessage = new OSCMessage(parameter.osc_general_path);
+    newMessage.addIntegerParameter(value);
+
+    OSCClient.send(newMessage);
 }
