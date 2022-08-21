@@ -1,6 +1,6 @@
 {
     "sdk": 3,
-    "version": 1005,
+    "version": 1010,
     "name": "OSC General Plugin",
     "id": "OSCConnector",
     "plugin_start_cmd": "\"%TP_PLUGIN_FOLDER%OSCConnector\\oscconnector.exe\"",
