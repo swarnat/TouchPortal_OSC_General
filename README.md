@@ -21,7 +21,8 @@ Target of this repository / plugin is to provide a framework for more specific O
 As example this plugin provide 3 actions to send any parameter to any URL, which can be configured in editor.
 
 Every Action you define within **entry.tp**, will be automatically call the function you define within the equal named file in **src/actions** Folder, where you also get the parameters.  
-See the existing actions as example.
+See the existing actions as example.  
+See wiki for docs, how to extend or process incoming messages: https://github.com/swarnat/TouchPortal_OSC_General/wiki  
 
 ## ChangeLog
 ```
